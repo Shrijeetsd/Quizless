@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  body{
+    background-color: black;
+  }
+  .jumbotron{
+  background-color: #328f8a;
+  background-image: url('https://www.shutterstock.com/image-photo/simple-top-view-office-equipment-260nw-1639481188.jpg');
+  background-size: 100%;
+  height: 640px;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.jumbotron{
+    margin-bottom: 0px;
+
+}
+
+.display-4{
+    position: relative;
+    left:290px;
+    
+}
+.lead{
+    position: relative;
+    left:290px;
+}
+.btn{
+  border-radius-shadow:0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9,
+               0 5px 50px 0 #FBFBF9	 inset, 0 5px 50px 0 #FBFBF9;
+	text-shadow: 0 0 5px #FBFBF9	, 0 0 5px #FBFBF9	;  
+}
+</style>
+<body>
+  {% include "quiz/navbar.html" %}
+<br>
+
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <font color="white">
+    <h1 class="display-1 " align=right>Let's Quiz</h1>
+    <p class="display-4 d-none d-sm-block">Test your skills and become a master.</p>
+    
+  
+    <p class="lead"><strong> Start Your Journey Here:</strong></p>
+    </font>
+    <a href="/student/studentsignup" class="btn btn-lg btn-info" style="padding-right: 35px; color:black;position:absolute;top:400px;left:960px;">
+      <i class="fa fa-user-plus" aria-hidden="true"></i><b>Sign Up</b></b></a>
+    
+   <br><br><br>
+   <br><br><br><br><br><br><br>
+  </div>  
+</section>
+
+</body>
+
+</html>
